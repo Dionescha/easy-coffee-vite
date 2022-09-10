@@ -1,1 +1,1 @@
-export { default } from './Container.component'
+export { default } from './Input.component'
