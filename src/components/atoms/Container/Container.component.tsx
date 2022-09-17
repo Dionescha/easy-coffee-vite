@@ -1,11 +1,26 @@
 import React from 'react'
-import Container from '.'
-import  Button  from './Container.style'
+import  Container  from './Container.style'
 
 
-const ContainerComponent = () => (
-  <Container />
+
+type ContainerComponentInterface = {
+  children?: JSX.Element | JSX.Element []
+  fullHeight?: boolean
+  fullCentered?: boolean
+};
+const ContainerComponent: React.FC<
+ContainerComponentInterface> = ({
+  children,
+  fullHeight,
+  fullCentered,
+}) => (
+  <Container 
+    fullHeight={fullHeight}
+    fullCentered={fullCentered
+    }>
+    {children}
+  </Container>
+
 )
-
 
 export default ContainerComponent

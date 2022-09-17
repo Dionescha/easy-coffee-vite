@@ -3,11 +3,11 @@ import styled from 'styled-components'
 
 
 
-const Input = styled.input`
+const Paper = styled.div`
 background-color: black;
 color: white;
 `
 
 
 
-export default Input
+export default Paper
