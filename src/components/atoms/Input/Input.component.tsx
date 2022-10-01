@@ -2,9 +2,15 @@ import React from 'react'
 
 import  Input  from './Input.style'
 
+interface InputInterface {
+  type: string
+  name?: string
+}
 
-const InputComponent = () => (
-  <Input>a</Input>
+const InputComponent = ({
+  type,
+}: InputInterface) => (
+  <Input type={type} />
 )
 
 
